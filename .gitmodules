@@ -1,0 +1,3 @@
+[submodule "Assets/Plugins/uWindowCapture"]
+	path = Assets/Plugins/uWindowCapture
+	url = https://github.com/hecomi/uWindowCapture.git
