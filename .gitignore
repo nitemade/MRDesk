@@ -1,0 +1,89 @@
+# Unity 项目 Git 忽略规则
+# 过滤 Unity 生成/缓存/本地环境文件，避免提交到版本库
+
+# --- Unity 缓存与构建输出 ---
+[Ll]ibrary/
+[Ll]ibrary/[Pp]ackageCache/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+[Ee]xportedObj/
+[Ss]erverData/
+[Aa]ssets/AssetStoreTools*
+[Aa]ssets/_Recovery/
+
+# UPM 本地嵌入包（保留 manifest.json / packages-lock.json）
+[Pp]ackages/*/
+![Pp]ackages/manifest.json
+![Pp]ackages/packages-lock.json
+
+# --- IDE / 编辑器 ---
+.vs/
+.vscode/
+.idea/
+*.DotSettings.user
+.consulo/
+*.sublime-project
+*.sublime-workspace
+
+# --- Unity 自动生成的工程文件（由 Editor 重新生成）---
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# --- 系统与杂项 ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+sysinfo.txt
+
+# --- 构建产物与包 ---
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.ipa
+*.exe
+*.dll
+*.so
+*.dylib
+init.gradle/
+.gradle/
+local.properties
+
+# --- 崩溃与诊断 ---
+[Cc]rashReport/
+crashlytics-build.properties
+*.stackdump
+
+# --- 其他常见临时文件 ---
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
